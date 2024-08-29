@@ -1,10 +1,9 @@
+use std::io;
+
 fn main() {
-    let x = 4;
-    println!("x is : {}", x);
-    {
-        let x = 1;
-        println!("x is : {}", x);
-    }
-    let x = x + 2;
-    println!("x is : {}", x);
+    println!("Hello, world!");
+    let mut input = String::new();
+
+    io::stdin().read_line(&mut input).expect("ERR");
+    println!("input: {}", input);
 }
