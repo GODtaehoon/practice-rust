@@ -24,3 +24,34 @@ yarn-error.log*
 
 **/.env
 **/target
+
+**/Cargo.lock
+
+# 빌드 아티팩트 및 중간 파일들
+**/*.rs.bk
+*.d
+*.obj
+*.o
+*.exe
+*.out
+
+# Cargo의 패키지와 빌드 시 생성되는 파일
+/.cargo/
+/pkg/
+
+# IDE와 편집기의 임시 파일들
+.idea/
+*.swp
+*.swo
+*.DS_Store
+*.vscode/
+
+# Tests의 빌드 중간 파일
+**/tests/target/
+
+# Rustdoc 문서 생성 시의 중간 파일
+*/doc/
+
+# 기타 불필요한 시스템 파일들
+Thumbs.db
+desktop.ini
